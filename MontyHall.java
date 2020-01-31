@@ -13,27 +13,14 @@ public class MontyHall {
 		
 		boolean winner = false;
 		
-		// Declare 3 doors
+		// Declare 3 doors - all initialized to be false (losers)
 		boolean[] doors = new boolean[3];
 		
 		// Randomly select one of the three doors to be winner and other 2 losers
 		Random rand = new Random();
 		int pos = rand.nextInt(3);
-		if (pos==0) {
-			doors[0]=true;
-			doors[1]=false;
-			doors[2]=false;
-		}
-		else if (pos==1) {
-			doors[0]=false;
-			doors[1]=true;
-			doors[2]=false;
-		}
-		else if (pos==2) {
-			doors[0]=false;
-			doors[1]=false;
-			doors[2]=true;
-		}
+		// Set one door to be winner
+		doors[pos]=true;
 		
 		// Have player randomly select one of the doors
 		int choice = rand.nextInt(3);

@@ -7,7 +7,7 @@ public class MontyHall {
 		
 	int victory = 0;
 	int victorySwitch =0;
-	int num = 10000000;
+	final int num = 10000000;
 	
 	for (int i=0; i<num; i++) {
 		
